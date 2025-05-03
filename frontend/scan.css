@@ -1,4 +1,4 @@
-/* scan.css */
+
 
 body {
     margin: 0;
@@ -79,7 +79,7 @@ body {
     display: none;
   }
   
-  /* Spinner */
+  /* Spinner >>>>>> */
   .spinner {
     border: 5px solid rgba(255, 255, 255, 0.2);
     border-top: 5px solid #000000;
@@ -90,7 +90,7 @@ body {
     animation: spin 1s linear infinite;
   }
   
-  /* Animations */
+  /* Animations >>>>>>>>>>>>>>>>> */
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
@@ -102,7 +102,7 @@ body {
     100% { background-position: 0% 50%; }
   }
   
-  /* Fade-in effect */
+  /* Fade-in effect >>>>>>>>>>>>>>>>>>>>>>>>> */
   .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -149,7 +149,7 @@ body {
     from, to { border-color: transparent }
     50% { border-color: #06d6a0 }
   }  
-  */
+    { can be applied later for the response bar }*/
 
 
   

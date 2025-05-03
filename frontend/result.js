@@ -26,7 +26,7 @@ async function scanHeaders() {
     return;
   }
 
-  // Show loading spinner
+  // Show loading spinner while the process ison
   loading.classList.remove('hidden');
   resultDiv.innerHTML = '';
 
@@ -41,7 +41,7 @@ async function scanHeaders() {
 
     const headers = await response.json();
 
-    // Hide loading spinner
+    // Hide loading spinner, process isofff
     loading.classList.add('hidden');
 
     if (!response.ok) {
