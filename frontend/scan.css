@@ -1,0 +1,155 @@
+/* scan.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh; 
+    background: linear-gradient(135deg, #01023f, #8585fc, #dde5e6);
+    background-size: 400% 400%;
+   /* animation: gradientMove 15s ease infinite; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    background: linear-gradient(135deg, #dddbdb, #6e6e74, #dde5e6);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 40px;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 8px 32px 0 rgb(146, 6, 6);
+    text-align: center;
+  }
+  
+  h1 {
+    color: #181515;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #1d1a1a;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  #urlInput {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    outline: none;
+    background-color: #3c3c3d;
+    color: #f5eaea;
+  }
+  
+  #scanButton {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #00a738;
+    color: #000;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #scanButton:hover {
+    background-color: #8cf391;
+  }
+  
+  #result {
+    margin-top: 20px;
+    text-align: left;
+    color: #131010;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Spinner */
+  .spinner {
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    border-top: 5px solid #000000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    animation: spin 1s linear infinite;
+  }
+  
+  /* Animations */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Fade-in effect */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+  }
+  
+  .fade-in.delay-1 {
+    animation-delay: 0.3s;
+  }
+  
+  .fade-in.delay-2 {
+    animation-delay: 0.6s;
+  }
+  
+  .fade-in.delay-3 {
+    animation-delay: 0.9s;
+  }
+  
+  .fade-in.delay-4 {
+    animation-delay: 1.2s;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+  /* .typewriter {
+    overflow: hidden; /* Ensures the text stays hidden until animated *
+    border-right: .15em solid #06d6a0; /* Optional blinking cursor effect *
+    white-space: nowrap;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #06d6a0 }
+  }  
+  */
+
+
+  

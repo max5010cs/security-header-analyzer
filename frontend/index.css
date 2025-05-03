@@ -1,0 +1,285 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1511e9, #8697b6, #f8f8fa);
+    color: #333;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10%;
+   
+    color: #d5daeb;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .hero-text {
+    flex: 1;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .scan-btn {
+    background-color: #06d6a0;
+    color: #0f172a;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .scan-btn:hover {
+    background-color: #05c298;
+  }
+  
+  .hero-icon {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideIn 1.2s ease-in-out;
+    color: #05c298;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  .scan-btn {
+    background-color: white;
+    color: #06d6a0;
+    padding: 14px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .scan-btn:hover {
+    background-color: #06d6a0;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  }
+  
+  .scan-btn {
+    background-color: white;
+    color: #06d6a0;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+  }
+  
+  .scan-btn:hover {
+    background-color: #06d6a0;
+    color: white;
+    border: 2px solid white;
+  }
+  
+
+
+
+
+
+
+
+  .info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 10%;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .importance {
+    flex: 1 1 400px;
+    
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.781);
+    animation: fadeInUp 0.8s ease;
+  }
+  
+
+  .headers-info {
+    flex: 1 1 400px;
+    background: linear-gradient(135deg, #0716e7, hsl(236, 39%, 51%), #d8d8d8);
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(31, 30, 30, 0.781);
+    animation: fadeInUp 0.8s ease;
+  }
+
+  .importance h2, .headers-info button {
+    font-size: 1.5rem;
+    color: #272626;
+    margin-bottom: 15px;
+  }
+  
+  .importance p {
+    color: #000000;
+    line-height: 1.6;
+  }
+  
+   .info-content p {
+    color: #0a0606;
+    line-height: 1.6;
+  }
+  
+ 
+  
+  /*#info-panel.hidden {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+  
+  #info-panel {
+    max-height: 500px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    margin-top: 20px;
+  }
+  
+  .info-content {
+    color: #eee;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }*/
+
+
+
+  
+  /*.importance-section {
+    padding: 40px 20px;
+    text-align: center;
+  } */
+  
+  .headers-info {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #toggle-info {
+    background-color: #ece8e8;
+    color: rgb(27, 26, 26);
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-bottom: 10px;
+  }
+  
+  #toggle-info:hover {
+    background-color: #4bff4b;
+  }
+
+  #info-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease, padding 0.6s ease;
+    
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: #0a0606;
+  }
+  
+  #info-panel.visible {
+    max-height: 500px;
+    padding: 20px;
+  }
+  
+  .info-content {
+    text-align: left;
+    color: rgb(0, 0, 0);
+  }  
+  
+
+
+
+
+
+
+
+
+
+  .shield-icon {
+    transition: transform 0.4s ease;
+  }
+  .shield-icon:hover {
+    transform: scale(1.05);
+  }
+  
+  .checkmark {
+    transition: all 0.5s ease;
+    transform-origin: center;
+  }
+  
+  .shield-icon:hover .checkmark {
+    transform: scale(1.1) rotate(-2deg);
+  }
+
+
+
+
+  
+  .page-container {
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+
+
+footer {
+    background-color: #000000;
+    color: rgb(20, 20, 20);
+    padding: 15px;
+    text-align: center;
+    margin-top: auto; /* This is key */
+  }

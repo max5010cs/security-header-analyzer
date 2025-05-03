@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Security Header Checker</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Secure Your Web</h1>
+      <p>Analyze your website's HTTP security headers and ensure best practices are in place to protect your users.</p>
+      <a href="scan.html" class="scan-btn">Scan a Website</a>
+    </div>
+    <div class="hero-icon">
+      <svg class="shield-icon" width="220" height="220" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2L3 6V12C3 17 7 21 12 22C17 21 21 17 21 12V6L12 2Z" stroke="#030b85" stroke-width="2" fill="none"/>
+        <path class="checkmark" d="M9 12L11 14L15 10" stroke="#4ade80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </header>
+
+
+  <section class="info-section">
+    <div class="importance">
+      <h2>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" fill="#06d6a0" style="vertical-align: middle;">
+          <path d="M12 1.5 3 5v6c0 5.25 3.75 10.05 9 11.5 5.25-1.45 9-6.25 9-11.5V5l-9-3.5zM12 20.3c-4.35-1.3-7.5-5.35-7.5-9.3V6.3L12 3.15 19.5 6.3v4.7c0 3.95-3.15 8-7.5 9.3zm1.65-5.65-3.3-3.3 1.05-1.05 2.25 2.25 4.2-4.2 1.05 1.05-5.25 5.25z"/>
+        </svg>
+        Why Security Headers Matter
+      </h2>
+      <p>Security headers help protect your website against clickjacking, XSS, content injection, and other attacks.</p>
+    </div>
+  
+    <div class="headers-info">
+      <button id="toggle-info">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" fill="#118ab2" style="vertical-align: middle;">
+          <path d="M9.958 14.042 5.938 10l1.02-1.02 3 2.98 6.104-6.104 1.02 1.02Z"/>
+        </svg>
+        Security Headers You Need to Know
+      </button>
+      <div id="info-panel" class="hidden">
+        <div class="info-content">
+          <h3>Common Headers</h3>
+          <p>Strict-Transport-Security, Content-Security-Policy, X-Frame-Options...</p>
+          <p>Each of these provides a layer of defense against specific web-based threats.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-container">
+    
+    <footer>© 2025 S-HEADERS | All rights reserved   |  Contact info|max5010cs@gmail.com </footer>
+  </div>
+
+
+  <script>
+    const toggleBtn = document.getElementById("toggle-info");
+    const panel = document.getElementById("info-panel");
+
+    toggleBtn.addEventListener("click", () => {
+      panel.classList.toggle("visible");
+      toggleBtn.textContent = panel.classList.contains("visible") 
+        ? "Hide Security Headers ▲" 
+        : "Security Headers You Need to Know ▼";
+    });
+  </script>
+
+</body>
+</html>

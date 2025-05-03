@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Website Security Header Scanner</title>
+  <link rel="stylesheet" href="scan.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="fade-in">Security Header Scanner</h1>
+    <p class="fade-in delay-1">Enter a website URL to scan its security headers</p>
+
+    <div class="input-group fade-in delay-2">
+      <input type="text" id="urlInput" placeholder="https://example.com" />
+      <button id="scanButton" onclick="scanHeaders()">Scan</button>
+    </div>
+
+    <div id="loading" class="fade-in delay-3 hidden">
+      <div class="spinner"></div>
+      <p>Scanning headers...</p>
+    </div>
+
+    <div id="result" class="fade-in delay-4"></div>
+  </div>
+
+  <script src="result.js"></script>
+
+</body>
+</html>
