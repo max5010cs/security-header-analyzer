@@ -281,5 +281,14 @@ footer {
     color: rgb(20, 20, 20);
     padding: 15px;
     text-align: center;
-    margin-top: auto; /* This is key */
+    margin-top: auto; 
+  }
+
+
+
+
+  /* Links */
+  .links a {
+    display: block;
+    margin-top: 10px;
   }
