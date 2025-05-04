@@ -31,7 +31,38 @@
         </svg>
         Why Security Headers Matter
       </h2>
-      <p>Security headers help protect your website against clickjacking, XSS, content injection, and other attacks.</p>
+      <p class="n1importance">
+        
+        Security headers are special HTTP response fields sent by a server to a user's browser. They tell the browser how to behave when handling the site’s content — especially in terms of security. These headers help prevent attacks like cross-site scripting (XSS), clickjacking, and data injection.
+      </p>
+        <hr>
+        <br>
+       <p class="n2importance">
+        Without security headers, a browser will use default behaviors — which are often not secure. Security headers give you control over those behaviors and enforce protections like:
+        
+        Preventing your site from being loaded in an iframe (X-Frame-Options)
+        
+        Blocking scripts from unknown sources (Content-Security-Policy)
+        
+        Forcing encrypted (HTTPS) connections (Strict-Transport-Security)
+        
+        Preventing MIME-type sniffing (X-Content-Type-Options)
+        </p>
+        <hr>
+        <br>
+        <p class="n3importance">
+        If you don't use security headers:
+        
+        Your site may be embedded into malicious iframes (clickjacking attacks)
+        
+        Browsers may execute untrusted scripts injected by attackers (XSS)
+        
+        Users could be tricked into insecure connections (downgrade attacks)
+        
+        The browser might guess file types incorrectly, exposing vulnerabilities
+        <br>
+        
+        In short, missing security headers leaves your site open to a range of avoidable threats — even if your code is clean.</p>
     </div>
   
     <div class="headers-info">

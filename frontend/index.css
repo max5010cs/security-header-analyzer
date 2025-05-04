@@ -149,7 +149,7 @@ body {
   }
   
   .importance p {
-    color: #000000;
+    /*color: #000000;  wrapped in order to give explanations different colour*/
     line-height: 1.6;
   }
   
@@ -239,6 +239,17 @@ body {
   
 
 
+  /* styles related to explanations of security headers */
+
+  .n1importance {
+    color: rgb(0, 0, 0);
+  }
+  .n2importance {
+    color: rgb(98, 211, 32);
+  }
+  .n3importance {
+    color: rgb(186, 212, 36);
+  }
 
 
 
